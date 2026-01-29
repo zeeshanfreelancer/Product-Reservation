@@ -24,4 +24,4 @@ Frontend-only product reservation app matching the reference UI and flow at [Fig
 - `npm install`
 - `npm run dev`
 
-Live demo: optional (run locally with `npm run dev`).
+Live demo: https://product-reservation-749vjm05k.vercel.app/
