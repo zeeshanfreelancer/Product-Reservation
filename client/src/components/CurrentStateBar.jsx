@@ -1,12 +1,12 @@
 export default function CurrentStateBar({ availableStock, reservedCount }) {
   return (
-    <div className="mt-6 bg-blue-50 rounded-lg p-4">
-      <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+    <div className="mt-4 sm:mt-6 bg-blue-50 rounded-lg p-3 sm:p-4">
+      <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-between gap-2 text-xs sm:text-sm">
         <div>
           <span className="font-semibold">Current State:</span>{' '}
           <span className="capitalize">product</span>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-3 sm:gap-4">
           <span>
             <span className="font-semibold">Available:</span> {availableStock}
           </span>

@@ -9,15 +9,15 @@ export default function TimerDisplay({ timerSecondsRemaining }) {
   return (
     <>
       <div
-        className="flex items-center justify-between p-3 rounded-lg border-2 border-red-100"
+        className="flex items-center justify-between p-2.5 sm:p-3 rounded-lg border-2 border-red-100"
         style={{ backgroundColor }}
       >
-        <div className="flex items-center gap-2">
-          <LuClock className="w-4 h-4 text-red-700" />
-          <span className="text-sm font-medium text-red-700">Time left:</span>
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <LuClock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-700 shrink-0" />
+          <span className="text-xs sm:text-sm font-medium text-red-700">Time left:</span>
         </div>
         <span
-          className={`text-2xl font-bold text-red-600 ${showWarning ? 'animate-pulse' : ''}`}
+          className={`text-xl sm:text-2xl font-bold text-red-600 tabular-nums ${showWarning ? 'animate-pulse' : ''}`}
         >
           {timerSecondsRemaining !== null ? formatTime(timerSecondsRemaining) : '02:00'}
         </span>

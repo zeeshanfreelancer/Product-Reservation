@@ -90,17 +90,17 @@ function App() {
   const showRightCard = cart.length > 0 || showPurchaseComplete;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 overflow-auto">
-      <div className="min-h-full p-12">
-        <div className="max-w-[900px] mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 overflow-auto safe-area-padding">
+      <div className="min-h-full p-4 sm:p-6 lg:p-12">
+        <div className="max-w-[900px] mx-auto px-1 sm:px-0">
           {/* Page title and subtitle */}
-          <div className="mb-8 text-center">
-            <h1 className="text-3xl font-bold mb-2">Flash Deal Product Reservation</h1>
-            <p className="text-gray-600">Interactive demonstration with working timer and stock management</p>
+          <div className="mb-6 sm:mb-8 text-center">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 px-1">Flash Deal Product Reservation</h1>
+            <p className="text-gray-600 text-sm sm:text-base">Interactive demonstration with working timer and stock management</p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg">
-            <div className={`flex flex-col gap-8 ${showRightCard ? 'lg:flex-row lg:items-start lg:justify-center' : 'items-center justify-center'}`}>
+          <div className="bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
+            <div className={`flex flex-col gap-6 sm:gap-8 ${showRightCard ? 'lg:flex-row lg:items-start lg:justify-center' : 'items-center justify-center'}`}>
               {/* Product Section: single card, centered when no right card */}
               <div className={showRightCard ? 'flex-1 flex justify-center lg:justify-end' : 'flex justify-center w-full'}>
                 <ProductCard

@@ -1,6 +1,6 @@
 export default function StockInfo({ totalStock, reserved, available }) {
   return (
-    <div className="space-y-2 text-sm bg-gray-50 p-4 rounded-lg">
+    <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm bg-gray-50 p-3 sm:p-4 rounded-lg">
       <div className="flex justify-between">
         <span className="text-gray-600">Total stock:</span>
         <span className="font-medium">{totalStock}</span>
